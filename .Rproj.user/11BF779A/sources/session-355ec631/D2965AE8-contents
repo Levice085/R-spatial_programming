@@ -1,0 +1,9 @@
+print("Hello World",quote = FALSE)
+greeting <- "Hello World"
+greeting
+nchar(greeting)
+cat("My greeting is:",greeting)
+number5 <- 5
+number4 <- 4
+sum <- number5+number4
+print(paste("The sum of 5 and 4 is",sum))
