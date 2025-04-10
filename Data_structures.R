@@ -238,7 +238,7 @@ A = matrix(
   nrow = 3,ncol = 3,         
   byrow = TRUE          
 )
-# Naming rows
+A# Naming rows
 rownames(A) = c("a", "b", "c")
 # Naming columns
 colnames(A) = c("c", "d", "e")
@@ -276,6 +276,8 @@ resultant <- friend.data
 # print the modified data frame
 print(resultant)
 
+new_name = c(6,"Moses")
+friend.data <- rbind(friend.data,new_name)
 # Access Items using [] 
 friend.data[1]
 
