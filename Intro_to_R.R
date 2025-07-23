@@ -1,13 +1,13 @@
 #.....Printing my first code......#
 print("Hello World")
-print("Hello World",quote = F)
+print("Hello World",quote = FALSE)
 
 
 #======Basic syntax===============#
 
 #.............Variables.......#
 # Legal variable names:
-myvar <- "John"
+myvar <- "John" 
 my_var <- "John"
 myVar <- "John"
 MYVAR <- "John"
@@ -109,6 +109,8 @@ c <- 500
 
 if (a > b | a > c) {
   print("At least one of the conditions is true")
+} else{
+  "Both conditions are true"
 }
 
 #=================LOOPS=========================#
@@ -125,9 +127,8 @@ if (a > b | a > c) {
 #With the while loop we can execute a set of statements as long as a condition is TRUE:
 i <-1
 while (i<=6){
- 
   print(i)
-  i = i+1
+  i =i+1
 }
 #Note: remember to increment i, or else the loop will continue forever.
 val = 1 
@@ -141,8 +142,9 @@ while (val <= 5 )
 #..........Using Breaks......#
 i <- 0
 while (i <6) {
-  i <- i + 1
+  
   print(i)
+  i <- i + 1
   
   if (i == 4) {
     break
@@ -152,6 +154,7 @@ while (i <6) {
 #..........Next {continue in python}.........#
 i <- 0
 while (i <= 6) {
+  
   i <- i + 1
   if (i == 3) {
     next
@@ -220,7 +223,7 @@ for (x in fruits) {
 dice = 1:6
 for (i in dice){
   if (i==6){
-    print(paste("The dice number is",i,"is Yahtzee"))
+    print(paste("The dice number",i,"is Yahtzee"))
   }else{
     print(paste("The dice number",i,"is not Yahtzee!"))
   }
